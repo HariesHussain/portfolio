@@ -24,9 +24,9 @@ export const SEO = {
   },
 
   // ─── Page Meta ──────────────────────────────────────────
-  title: 'Haries Hussain',
+  title: 'Haries Hussain | Premium Web Developer in Nandyal | Business Websites',
   description:
-    'Haries Hussain — freelance web developer in Nandyal, India. I build premium, fast, mobile-friendly business websites, e-commerce stores, landing pages, portfolio sites, and provide SEO optimization. Get a free quote today.',
+    'Haries Hussain builds premium business websites, portfolios, landing pages and SEO-friendly websites for clients in Nandyal and worldwide.',
   keywords: [
     'web developer in Nandyal',
     'freelance web developer India',

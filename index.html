@@ -1,13 +1,51 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Haries | Portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- Core Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!--
+    ┌──────────────────────────────────────────────────────────┐
+    │  STATIC FALLBACK META — for crawlers that don't run JS  │
+    │  The SEOHead.jsx component overrides these dynamically   │
+    │  at runtime using values from seo.config.js              │
+    └──────────────────────────────────────────────────────────┘
+  -->
+  <title>Haries Hussain</title>
+  <meta name="description"
+    content="Haries Hussain — freelance web developer in Nandyal, India. I build premium, fast, mobile-friendly business websites, e-commerce stores, landing pages, portfolio sites, and provide SEO optimization. Get a free quote today." />
+  <meta name="author" content="Haries Hussain" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+  <!-- Theme & Browser -->
+  <meta name="theme-color" content="#f8fafc" />
+  <meta name="msapplication-TileColor" content="#f8fafc" />
+  <meta name="color-scheme" content="light" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- Google Search Console verification (paste your code below) -->
+  <!-- <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE" /> -->
+  <!-- Bing Webmaster Tools verification (paste your code below) -->
+  <!-- <meta name="msvalidate.01" content="YOUR_BING_VERIFICATION_CODE" /> -->
+
+  <!-- Preconnect for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://formsubmit.co" />
+</head>
+
+<body>
+  <!-- Accessible skip link -->
+  <a href="#home"
+    class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[999] focus:bg-white focus:px-4 focus:py-2 focus:rounded-lg focus:shadow-lg focus:text-slate-900 focus:font-semibold">Skip
+    to main content</a>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>

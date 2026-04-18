@@ -1,191 +1,108 @@
-import { FaPhone } from "react-icons/fa";
 import React from 'react';
-import { FaGithub, FaMapPin } from "react-icons/fa";
-import { HiCode, HiCube, HiDatabase, HiMail, HiBriefcase } from "react-icons/hi";
+import { FaPhone, FaMapPin, FaCheckCircle } from "react-icons/fa";
+import { 
+    HiMail, 
+    HiBriefcase, 
+    HiUser, 
+    HiShoppingCart, 
+    HiDocumentText, 
+    HiRefresh, 
+    HiChartBar,
+    HiSparkles,
+    HiLightningBolt,
+    HiDeviceMobile,
+    HiSearch,
+    HiChat,
+    HiCurrencyDollar,
+    HiSupport
+} from "react-icons/hi";
 
 export const config = {
     developer: {
         name: "Haries",
-        
     },
     social: {
-        github: "harieshussain",
     },
     NAV_ITEMS: [
-        { href: '/', label: 'Home' },
-        { href: '/projects', label: 'Projects' },
-        { href: '/certificates', label: 'Certificates' },
-        { href: '/contact', label: 'Contact' }
+        { href: '#home', label: 'Home' },
+        { href: '#services', label: 'Services' },
+        { href: '#why-choose-me', label: 'Why Choose Me' },
+        { href: '#demo-projects', label: 'Featured Projects' },
+        { href: '#contact', label: 'Contact' }
     ],
-    skills: [
+    services: [
         {
-            title: "Frontend",
-            icon: <HiCode />,
-            description: "Modern web interfaces",
-            bgClass: "bg-blue-500/10",
-            iconClass: "text-blue-500",
-            skills: [
-                { name: "Next.js 15", level: "Advanced", hot: true },
-                { name: "React", level: "Advanced" },
-                { name: "TailwindCSS", level: "Expert" },
-                { name: "JavaScript", level: "Advanced" },
-                { name: "Framer Motion", level: "Intermediate" }
-            ]
+            title: "Business Websites",
+            description: "Professional, fast, and optimized websites that build trust and convert visitors into clients.",
+            icon: <HiBriefcase className="w-8 h-8 text-blue-600" />
         },
         {
-            title: "Backend",
-            icon: <HiDatabase />,
-            description: "Server & Database",
-            bgClass: "bg-emerald-500/10",
-            iconClass: "text-emerald-500",
-            skills: [
-                { name: "Node.js", level: "Advanced", hot: true },
-                { name: "MongoDB", level: "Advanced" },
-                { name: "Express.js", level: "Advanced", hot: true }
-            ]
+            title: "Portfolio Websites",
+            description: "Stand out with a modern, premium online portfolio that highlights your best work and expertise.",
+            icon: <HiUser className="w-8 h-8 text-blue-600" />
         },
         {
-            title: "Programs & Tools",
-            icon: <HiCube />,
-            description: "Development & Productivity Tools",
-            bgClass: "bg-orange-500/10",
-            iconClass: "text-orange-500",
-            skills: [
-                { name: "VS Code", level: "Expert", hot: true },
-                { name: "Postman", level: "Advanced" },
-                { name: "Photoshop", level: "Intermediate" },
-                { name: "Git", level: "Advanced" }
-            ]
+            title: "E-commerce Stores",
+            description: "Secure, scalable, and beautifully designed online stores tailored to drive sales and growth.",
+            icon: <HiShoppingCart className="w-8 h-8 text-blue-600" />
+        },
+        {
+            title: "Landing Pages",
+            description: "High-converting landing pages specifically crafted for your marketing campaigns and targeted leads.",
+            icon: <HiDocumentText className="w-8 h-8 text-blue-600" />
+        },
+        {
+            title: "Website Redesign",
+            description: "Upgrade your outdated website with a modern aesthetic, better performance, and improved UX.",
+            icon: <HiRefresh className="w-8 h-8 text-blue-600" />
+        },
+        {
+            title: "SEO Optimization",
+            description: "Drive organic traffic by improving your search rankings through proven on-page SEO strategies.",
+            icon: <HiChartBar className="w-8 h-8 text-blue-600" />
         }
     ],
-    experiences: [
+    whyChooseMe: [
+        { title: "Premium Modern Design", icon: <HiSparkles className="w-6 h-6 text-blue-600" /> },
+        { title: "Fast Delivery", icon: <HiLightningBolt className="w-6 h-6 text-blue-600" /> },
+        { title: "Mobile Responsive", icon: <HiDeviceMobile className="w-6 h-6 text-blue-600" /> },
+        { title: "SEO Optimized", icon: <HiSearch className="w-6 h-6 text-blue-600" /> },
+        { title: "Clear Communication", icon: <HiChat className="w-6 h-6 text-blue-600" /> },
+        { title: "Affordable Solutions", icon: <HiCurrencyDollar className="w-6 h-6 text-blue-600" /> },
+        { title: "Support After Delivery", icon: <HiSupport className="w-6 h-6 text-blue-600" /> }
+    ],
+    demoProjects: [
         {
-            position: "Frontend Developer",
-            
-            period: "2025",
-            location: "Remote",
-            description: "Developing modern, responsive frontend applications with focus on user experience and performance. Working with cutting-edge technologies to build scalable web solutions.",
-            responsibilities: [
-                "Building responsive and interactive user interfaces using React and Next.js",
-                "Implementing modern UI/UX designs with TailwindCSS and Framer Motion",
-                "Optimizing application performance and ensuring cross-browser compatibility",
-                "Collaborating with design and backend teams to deliver high-quality features"
-            ],
-            technologies: ["React", "Next.js", "TailwindCSS", "JavaScript", "Framer Motion", "TypeScript"]
+            title: "HabitTracker",
+            description: "A premium dashboard designed for personal tracking. Built for speed, flawless user experience, and modern aesthetics.",
+            image: "/projects/habittracker.png",
+            demoLink: "https://habitflowx.vercel.app"
         },
         {
-            position: "Full Stack Developer",
-            
-            period: "2025",
-            location: "Remote",
-            description: "Developed and maintained full-stack web applications, working on both frontend and backend systems. Collaborated with cross-functional teams to deliver robust software solutions.",
-            responsibilities: [
-                "Developed and maintained full-stack web applications using React, Node.js, and MongoDB",
-                "Implemented RESTful APIs and integrated third-party services",
-                "Built responsive user interfaces and optimized application performance",
-                "Worked on database design and backend architecture"
-            ],
-            technologies: ["React", "Node.js", "MongoDB", "Express", "JavaScript", "MERN Stack"]
+            title: "FitGenie",
+            description: "A comprehensive gym fitness platform helping users with guided workouts, exercise technique demonstrations, calorie tracking, automated fitness planning, and an integrated AI fitness coach.",
+            image: "/projects/fitgenie.png",
+            demoLink: "https://fitgenie-x.vercel.app/"
         }
     ],
-    projects: [
-        {
-            id: 1,
-            title: "E-Commerce Platform",
-            description: "A full-stack e-commerce platform with modern UI/UX, real-time inventory management, secure payment integration, and admin dashboard. Features include product catalog, shopping cart, order tracking, and user authentication.",
-            image: "/projects/project-1.webp",
-            technologies: ["React", "Node.js", "MongoDB", "Express", "Stripe", "TailwindCSS"],
-            github: "https://github.com/HariesHussain",
-            demo: "#"
-        },
-        {
-            id: 2,
-            title: "Social Media Dashboard",
-            description: "A comprehensive social media management dashboard with analytics, scheduling, and multi-platform integration. Built with real-time updates, data visualization, and responsive design for seamless user experience.",
-            image: "/projects/project-2.webp",
-            technologies: ["Next.js", "TypeScript", "PostgreSQL", "Chart.js", "Framer Motion"],
-            github: "https://github.com/HariesHussain",
-            demo: "#"
-        },
-        {
-            id: 3,
-            title: "Task Management App",
-            description: "A collaborative task management application with real-time synchronization, drag-and-drop interface, team collaboration features, and project tracking. Includes kanban boards, time tracking, and notifications.",
-            image: "/projects/project-3.webp",
-            technologies: ["React", "Socket.io", "MongoDB", "Express", "WebSockets", "Material UI"],
-            github: "https://github.com/HariesHussain",
-            demo: "#"
-        },
-        {
-            id: 4,
-            title: "Weather Forecast App",
-            description: "A beautiful weather application with location-based forecasts, interactive maps, weather alerts, and detailed meteorological data. Features include 7-day forecasts, hourly predictions, and weather history.",
-            image: "/projects/project-4.webp",
-            technologies: ["React", "OpenWeather API", "Chart.js", "Geolocation API", "TailwindCSS"],
-            github: "https://github.com/HariesHussain",
-            demo: "#"
-        },
-        {
-            id: 5,
-            title: "Portfolio Website",
-            description: "A modern, responsive portfolio website showcasing projects, skills, and experience. Features include animated components, dark mode, smooth scrolling, and optimized performance with SEO best practices.",
-            image: "/projects/project-5.webp",
-            technologies: ["React", "Framer Motion", "TailwindCSS", "Vite", "Three.js"],
-            github: "https://github.com/HariesHussain",
-            demo: "#"
-        }
-    ],
-    certificates: [
-    {
-        title: "Web Development",
-        issuer: "Eduskills",
-        year: "2025",
-        file: "/certificates/web-development.pdf"
-    },
-    {
-        title: "Prompt Engineering",
-        issuer: "simplilearn",
-        year: "2025",
-        file: "/certificates/prompt-engineering.pdf"
-    },
-    {
-        title: "Machine Learning Using Python",
-        issuer: "simplilearn",
-        year: "2025",
-        file: "/certificates/ml-python.pdf"
-    },
-    {
-        title: "Generative AI",
-        issuer: "simplilearn",
-        year: "2025",
-        file: "/certificates/generative-ai.pdf"
-    }
-],
-
     contactInfo: [
         {
-            icon: <FaGithub className="w-5 h-5" />,
-            label: "GitHub",
-            value: "@harieshussain",
-            link: `https://github.com/HariesHussain`
-        },
-        {
-            icon: <HiMail className="w-5 h-5" />,
+            icon: <HiMail className="w-5 h-5 text-blue-600" />,
             label: "Email",
             value: "shaikharieshussain09@gmail.com",
             link: "mailto:shaikharieshussain09@gmail.com"
         },
         {
-            icon: <FaPhone className="w-5 h-5" />,
+            icon: <FaPhone className="w-5 h-5 text-blue-600" />,
             label: "Mobile",
             value: "9391175096",
             link: "tel:9391175096"
         },
          {
-            icon: <FaMapPin className="w-5 h-5" />,
+            icon: <FaMapPin className="w-5 h-5 text-blue-600" />,
             label: "Location",
             value: "India",
             link: null
         }
     ]
-} 
+};

@@ -2,11 +2,11 @@
 
 @layer base {
   * {
-    @apply border-white/10;
+    @apply border-slate-200;
   }
   
   body {
-    @apply bg-black text-white antialiased;
+    @apply bg-slate-50 text-slate-800 antialiased;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       sans-serif;
@@ -36,46 +36,28 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Performance optimizations for 3D transforms */
-#experience {
+/* Performance optimizations */
+section {
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
   will-change: scroll-position;
   contain: layout style paint;
 }
 
-#experience * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* Performance optimizations for skills showcase */
-#contact {
-  transform: translateZ(0);
-  -webkit-transform: translateZ(0);
-  will-change: scroll-position;
-  contain: layout style paint;
-}
-
-#contact * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* Custom scrollbar */
+/* Custom scrollbar optimized for light theme */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #000;
+  background: #f8fafc;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.2);
+  background: #cbd5e1;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: #94a3b8;
 }

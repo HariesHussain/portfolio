@@ -1,19 +1,20 @@
 import React from 'react';
 import Hero from '../components/Hero';
-import Experience from '../components/Experience';
-import Projects from '../components/Projects';
-import SkillsShowcase from '../components/SkillsShowcase';
+import Services from '../components/Services';
+import WhyChooseMe from '../components/WhyChooseMe';
+import DemoProjects from '../components/DemoProjects';
+import ContactSection from '../components/ContactSection';
 
 const Home = () => {
   return (
-    <>
+    <main role="main">
       <Hero />
-      <Experience />
-      <Projects />
-      <SkillsShowcase />
-    </>
+      <Services />
+      <DemoProjects />
+      <WhyChooseMe />
+      <ContactSection />
+    </main>
   );
 };
 
 export default Home;
-

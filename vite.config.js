@@ -9,4 +9,7 @@ export default defineConfig({
     tailwindcss(),
     react()
   ],
+  server: {
+    host: true, // Listens on all local IPs
+  }
 })

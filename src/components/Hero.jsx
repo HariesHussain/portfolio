@@ -62,7 +62,6 @@ const Hero = () => {
                                 Hi, I'm Haries 👋
                             </h2>
                             <h1 className="text-[22px] leading-tight sm:text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight lg:leading-[1.1] text-slate-900">
-                                Haries Hussain <br className="hidden lg:block" />
                                 <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent block mt-1 lg:mt-0 lg:inline">
                                     Premium Web Developer for Business Growth
                                 </span>

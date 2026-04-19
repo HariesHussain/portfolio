@@ -1,10 +1,8 @@
 # robots.txt — Haries Hussain Portfolio
-# Update the domain below when your final URL is decided.
-# Must match the SITE_URL in src/seo.config.js
-
+# Generated dynamically by Vite plug-in from seo.config.js
 User-agent: *
 Allow: /
 Disallow: /assets/
 
 # Sitemap
-Sitemap: https://harieshussain.vercel.app/sitemap.xml
+Sitemap: https://harieshussain.tech/sitemap.xml

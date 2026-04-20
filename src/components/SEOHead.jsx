@@ -92,10 +92,10 @@ const SEOHead = () => {
             addressRegion: SEO.location.state,
             addressCountry: SEO.location.countryCode,
           },
-          sameAs: [],
+          sameAs: SEO.socialLinks, // <-- Added SameAs Links Here
         },
         {
-          '@type': 'ProfessionalService',
+          '@type': 'LocalBusiness', // <-- Changed to LocalBusiness for stronger Local SEO
           '@id': `${url}/#service`,
           name: `${SEO.name} — Web Development Services`,
           url: `${url}/`,
@@ -112,6 +112,7 @@ const SEOHead = () => {
           priceRange: '$$',
           areaServed: [
             { '@type': 'City', name: SEO.location.city },
+            { '@type': 'State', name: SEO.location.state },
             { '@type': 'Country', name: SEO.location.country },
           ],
           hasOfferCatalog: {
@@ -122,6 +123,7 @@ const SEOHead = () => {
               itemOffered: { '@type': 'Service', name },
             })),
           },
+          sameAs: SEO.socialLinks,
         },
         {
           '@type': 'BreadcrumbList',

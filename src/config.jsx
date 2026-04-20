@@ -73,16 +73,28 @@ export const config = {
     ],
     demoProjects: [
         {
-            title: "HabitTracker",
-            description: "A premium dashboard designed for personal tracking. Built for speed, flawless user experience, and modern aesthetics.",
-            image: "/projects/habittracker.png",
-            demoLink: "https://habitflowx.vercel.app"
+            title: "Nandyal Cafe",
+            description: "An authentic vintage Irani Cafe website showcasing traditional flavors, menu exploration, and rich historic aesthetics.",
+            image: "/projects/nandyal-cafe.png",
+            demoLink: "https://nandyal-cafe.vercel.app/"
         },
         {
             title: "FitGenie",
             description: "A comprehensive gym fitness platform helping users with guided workouts, exercise technique demonstrations, calorie tracking, automated fitness planning, and an integrated AI fitness coach.",
             image: "/projects/fitgenie.png",
             demoLink: "https://fitgenie-x.vercel.app/"
+        },
+        {
+            title: "Portfolio Website",
+            description: "A premium, fully responsive personal portfolio designed to showcase projects, skills, and professional experience with high-end animations.",
+            image: "/projects/portfolio.png",
+            demoLink: "https://haries-portfolio.vercel.app/"
+        },
+        {
+            title: "HabitTracker",
+            description: "A premium dashboard designed for personal tracking. Built for speed, flawless user experience, and modern aesthetics.",
+            image: "/projects/habittracker.png",
+            demoLink: "https://habitflowx.vercel.app"
         }
     ],
     contactInfo: [

@@ -13,7 +13,7 @@ export const SITE_URL = 'https://harieshussain.tech'; // ← CHANGE THIS TO YOUR
 export const SEO = {
   // ─── Identity ───────────────────────────────────────────
   name: 'Haries Hussain',
-  jobTitle: 'Web Developer',
+  jobTitle: 'Full Stack Web Developer',
   email: 'shaikharieshussain09@gmail.com',
   phone: '+919391175096',
   location: {
@@ -23,25 +23,33 @@ export const SEO = {
     countryCode: 'IN',
   },
 
+  // ─── Social Links for Schema ────────────────────────────
+  socialLinks: [
+    'https://share.google/Yq7Igmt5GEHjpqj8G',        // Google Business Profile
+    'https://jsdl.in/DT-99UUITGPDT8',                // Justdial
+    'https://www.linkedin.com/in/haries-hussain-shaik-06574632a', // LinkedIn
+    'https://github.com/HariesHussain',              // GitHub
+    'https://www.instagram.com/haries__shaik/'       // Instagram
+  ],
+
   // ─── Page Meta ──────────────────────────────────────────
-  title: 'Haries Hussain | Premium Web Developer in Nandyal | Business Websites',
+  title: 'Haries Hussain | Freelance Web Developer in Nandyal',
   description:
-    'Haries Hussain builds premium business websites, portfolios, landing pages and SEO-friendly websites for clients in Nandyal and worldwide.',
+    'Haries Hussain is a full stack website developer based in Nandyal, Andhra Pradesh, India. Specializing in freelance web development, portfolio websites, and landing pages.',
   keywords: [
     'web developer in Nandyal',
-    'freelance web developer India',
-    'business website developer',
-    'portfolio website developer',
+    'website developer in nandyal',
+    'freelance web developer in nandyal',
+    'full stack developer in nandyal',
+    'portfolio website developer in nandyal',
+    'landing page developer in nandyal',
     'React developer Nandyal',
-    'e-commerce developer India',
     'SEO optimization',
-    'premium website design',
-    'website redesign',
     'Haries Hussain',
   ].join(', '),
 
   // ─── Open Graph / Social ────────────────────────────────
-  ogTitle: 'Haries Hussain | Web Developer in Nandyal — Premium Websites for Business',
+  ogTitle: 'Haries Hussain | Freelance Web Developer in Nandyal',
   ogDescription:
     'I build premium, fast, mobile-friendly websites for businesses that want to grow. Modern design, SEO optimization, and high-converting pages.',
   ogImage: '/hero-profile.png', // resolved dynamically via SITE_URL
